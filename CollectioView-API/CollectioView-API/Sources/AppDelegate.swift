@@ -10,8 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        let viewController = HomeViewController() //instancia a HomeViewController
+        let navigationController = UINavigationController(rootViewController: viewController) //instancia uma navigationController que irá criar uma hierarquia de telas
+        
+        window = UIWindow(frame: UIScreen.main.bounds) //configura o tamanho da HomeVC que neste caso irá assumir o tamanho da tela do mobile
+        window?.rootViewController = navigationController //define HomeVC que é a rootnavigationController como a View raiz
+        window?.makeKeyAndVisible()//faz a tela ser visível
         return true
     }
 }

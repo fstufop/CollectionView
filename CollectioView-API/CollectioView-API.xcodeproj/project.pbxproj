@@ -10,6 +10,8 @@
 		2A58A41726FE04C00045E828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58A41626FE04C00045E828 /* AppDelegate.swift */; };
 		2A58A42026FE04C10045E828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A58A41F26FE04C10045E828 /* Assets.xcassets */; };
 		2A58A42326FE04C10045E828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A58A42126FE04C10045E828 /* LaunchScreen.storyboard */; };
+		2A58A43D26FE25280045E828 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58A43B26FE25280045E828 /* HomeViewController.swift */; };
+		2A58A43E26FE25280045E828 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A58A43C26FE25280045E828 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		2A58A41F26FE04C10045E828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A58A42226FE04C10045E828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A58A42426FE04C10045E828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A58A43B26FE25280045E828 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A58A43C26FE25280045E828 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 		2A58A41526FE04C00045E828 /* CollectioView-API */ = {
 			isa = PBXGroup;
 			children = (
+				2A58A43926FE25050045E828 /* Scenes */,
 				2A58A43326FE21F20045E828 /* Resources */,
 				2A58A43226FE21EA0045E828 /* Sources */,
 			);
@@ -72,6 +77,23 @@
 				2A58A42426FE04C10045E828 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A58A43926FE25050045E828 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2A58A43A26FE25190045E828 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2A58A43A26FE25190045E828 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A58A43B26FE25280045E828 /* HomeViewController.swift */,
+				2A58A43C26FE25280045E828 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +155,7 @@
 			files = (
 				2A58A42326FE04C10045E828 /* LaunchScreen.storyboard in Resources */,
 				2A58A42026FE04C10045E828 /* Assets.xcassets in Resources */,
+				2A58A43E26FE25280045E828 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A58A41726FE04C00045E828 /* AppDelegate.swift in Sources */,
+				2A58A43D26FE25280045E828 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
